@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit], [type=reset]   {
+    background-color: rgba(12, 14, 12, 0.671);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width:200px;
+}
+
+
+
+
+
+.container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    width:700px;
+   margin: 50px 350px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input{
+        width: 100%;
+        margin-top: 0;
+    }
+}
